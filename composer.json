@@ -1,0 +1,53 @@
+{
+    "name": "madpilot78/laravel-freebox-php",
+    "description": "Laravel FreeBoxPHP package",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "version": "0.0.1",
+    "keywords": [
+        "api",
+        "freebox",
+        "laravel",
+        "php"
+    ],
+    "authors": [
+        {
+            "name": "Guido Falsi",
+            "email": "mad@madpilot.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "madpilot78/freebox-php": "^0.0.1",
+        "nunomaduro/termwind": "^2.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.42",
+        "friendsofphp/php-cs-fixer": "^3.54",
+        "madpilot78/php-cs-fixer-config": "^1.0",
+        "phpunit/phpunit": "^11"
+    },
+    "autoload": {
+        "psr-4": {
+            "madpilot78\\Laravel-FreeBoxPHP\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {},
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        }
+    },
+    "scripts": {
+        "cs:check": "php-cs-fixer fix --dry-run --diff",
+        "cs:fix": "php-cs-fixer fix"
+    }
+}
