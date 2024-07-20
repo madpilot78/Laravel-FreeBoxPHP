@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "caa2186c137edc4fe0c6c3ccc8752ca8",
+    "content-hash": "67acffca6c449204cbb6509698ea54fd",
     "packages": [
         {
             "name": "brick/math",
@@ -1834,22 +1834,23 @@
         },
         {
             "name": "madpilot78/freebox-php",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/madpilot78/FreeBoxPHP.git",
-                "reference": "5eaddc34b525af01d7ad0844e19dfc01fcaf7cec"
+                "reference": "85f7c0c3cf101b1f0577a249179784cbcb888c6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/madpilot78/FreeBoxPHP/zipball/5eaddc34b525af01d7ad0844e19dfc01fcaf7cec",
-                "reference": "5eaddc34b525af01d7ad0844e19dfc01fcaf7cec",
+                "url": "https://api.github.com/repos/madpilot78/FreeBoxPHP/zipball/85f7c0c3cf101b1f0577a249179784cbcb888c6a",
+                "reference": "85f7c0c3cf101b1f0577a249179784cbcb888c6a",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.0",
                 "league/container": "^4.2",
                 "php": "^8.3",
+                "psr/container": "^2.0",
                 "psr/http-message": "^1.1 || ^2.0",
                 "psr/log": "^3.0"
             },
@@ -1885,9 +1886,9 @@
             ],
             "support": {
                 "issues": "https://github.com/madpilot78/FreeBoxPHP/issues",
-                "source": "https://github.com/madpilot78/FreeBoxPHP/tree/v0.0.1"
+                "source": "https://github.com/madpilot78/FreeBoxPHP/tree/v0.0.2"
             },
-            "time": "2024-07-02T21:47:37+00:00"
+            "time": "2024-07-20T17:46:20+00:00"
         },
         {
             "name": "monolog/monolog",
