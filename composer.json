@@ -19,20 +19,23 @@
     ],
     "require": {
         "php": "^8.2",
+        "illuminate/support": "^11.0",
         "madpilot78/freebox-php": "^0.0.1",
         "nunomaduro/termwind": "^2.0"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.42",
         "friendsofphp/php-cs-fixer": "^3.54",
+        "illuminate/testing": "^11.0",
         "madpilot78/php-cs-fixer-config": "^1.0",
+        "orchestra/testbench": "^9.2",
         "phpunit/phpunit": "^11"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "madpilot78\\Laravel-FreeBoxPHP\\": "src/"
+            "madpilot78\\LaravelFreeBoxPHP\\": "src/"
         }
     },
     "autoload-dev": {
@@ -43,6 +46,13 @@
     "config": {
         "allow-plugins": {
             "ergebnis/composer-normalize": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "madpilot78\\LaravelFreeBoxPHP\\FreeBoxPHPServiceProvider"
+            ]
         }
     },
     "scripts": {
