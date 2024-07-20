@@ -45,6 +45,7 @@ class FreeBoxPHPServiceProvider extends ServiceProvider
                     localAccess: config('freebox.localaccess', true),
                     boxType: BoxType::tryFrom(config('freebox.boxtype', '')) ?? BoxType::Free,
                     logger: $app->get(LoggerInterface::class)->channel(config('freebox.log_channel', 'null')),
+                    container: $app,
                     timeout: config('freebox.timeout', 30),
                     deviceName: config('freebox.devicename'),
                     certFile: config('freebox.certfile', ''),
