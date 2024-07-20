@@ -14,7 +14,10 @@ $config
     ])
     ->getFinder()
     ->ignoreVCSIgnored(true)
-    ->notPath('vendor')
+    ->notPath([
+        'vendor',
+        'config/freebox.php',
+    ])
     ->in(__DIR__);
 
 return $config;

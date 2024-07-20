@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     // appID for registration
     'appid' => env('FREEBOXPHP_APPID', 'net.madpilot.freeboxphp'),
