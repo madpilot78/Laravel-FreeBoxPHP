@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace madpilot78\LaravelFreeBoxPHP;
 
+use madpilot78\LaravelFreeBoxPHP\Commands\RegisterCommand;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 use Psr\Log\LoggerInterface;
@@ -26,6 +27,12 @@ class FreeBoxPHPServiceProvider extends ServiceProvider
             __DIR__ . '/../config/freebox.php',
             'freebox',
         );
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                RegisterCommand::class,
+            ]);
+        }
     }
 
     /**
