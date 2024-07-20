@@ -6,6 +6,7 @@ namespace madpilot78\LaravelFreeBoxPHP;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
+use Psr\Log\LoggerInterface;
 use madpilot78\FreeBoxPHP\Box;
 use madpilot78\FreeBoxPHP\Configuration;
 use madpilot78\FreeBoxPHP\Enum\BoxType;
