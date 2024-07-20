@@ -1,8 +1,8 @@
 {
     "name": "madpilot78/laravel-freebox-php",
     "description": "Laravel FreeBoxPHP package",
-    "type": "library",
     "license": "BSD-3-Clause",
+    "type": "library",
     "version": "0.0.1",
     "keywords": [
         "api",
@@ -28,6 +28,8 @@
         "madpilot78/php-cs-fixer-config": "^1.0",
         "phpunit/phpunit": "^11"
     },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "madpilot78\\Laravel-FreeBoxPHP\\": "src/"
@@ -38,9 +40,6 @@
             "Tests\\": "tests/"
         }
     },
-    "minimum-stability": "stable",
-    "prefer-stable": true,
-    "require": {},
     "config": {
         "allow-plugins": {
             "ergebnis/composer-normalize": true
