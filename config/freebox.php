@@ -31,6 +31,12 @@ return [
     // Timeout for requests
     'timeout' => env('FREEBOXPHP_TIMEOUT', 30),
 
+    // Token cache timeout
+    'tokenttl' => env('FREEBOXPHP_TOKEN_TTL', 7200),
+
+    // Token cache timeout
+    'cachebase' => env('FREEBOXPHP_CACHE_BASE', 'madpilot78:FreeBoxPHP:'),
+
     // Custom channel to log to
     'logchannel' => env('FREEBOXPHP_LOGCHANNEL', 'null'),
 ];

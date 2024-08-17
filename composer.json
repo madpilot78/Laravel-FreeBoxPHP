@@ -21,7 +21,8 @@
         "php": "^8.2",
         "illuminate/support": "^11.0",
         "madpilot78/freebox-php": "^0.0.2",
-        "psr/log": "^3.0"
+        "psr/log": "^3.0",
+        "symfony/cache": "^7.1"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.42",
