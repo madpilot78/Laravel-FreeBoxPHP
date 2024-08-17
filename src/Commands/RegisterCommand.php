@@ -15,7 +15,7 @@ class RegisterCommand extends Command
 
     public function handle(Box $box): int
     {
-        $token = $box->discover()->register();
+        $token = $box->discover()->register(quiet: false);
 
         $this->line($token);
 
