@@ -57,7 +57,7 @@ class FreeBoxPHPServiceProvider extends ServiceProvider
                     timeout: config('freebox.timeout', 30),
                     tokenTTL: config('freebox.tokenttl', 7200),
                     cacheKeyBase: config('freebox.cachebase', 'madpilot78:FreeBoxPHP:'),
-                    cache: app('cache.psr6'),
+                    cache: app('cache.store'),
                     deviceName: config('freebox.devicename'),
                     certFile: config('freebox.certfile', ''),
                 ),
