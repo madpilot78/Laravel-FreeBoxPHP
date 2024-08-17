@@ -55,7 +55,7 @@ class FreeBoxPHPServiceProvider extends ServiceProvider
                     logger: $app->get(LoggerInterface::class)->channel(config('freebox.log_channel', 'null')),
                     container: $app,
                     timeout: config('freebox.timeout', 30),
-                    tokenTTL: config('freebox.tokenttl', 7200),
+                    tokenTTL: config('freebox.tokenttl', 300),
                     cacheKeyBase: config('freebox.cachebase', 'madpilot78:FreeBoxPHP:'),
                     cache: app('cache.store'),
                     deviceName: config('freebox.devicename'),
