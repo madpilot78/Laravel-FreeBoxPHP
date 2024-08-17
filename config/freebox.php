@@ -32,7 +32,7 @@ return [
     'timeout' => env('FREEBOXPHP_TIMEOUT', 30),
 
     // Token cache timeout
-    'tokenttl' => (int) env('FREEBOXPHP_TOKEN_TTL', 300),
+    'tokenttl' => (int) env('FREEBOXPHP_TOKEN_TTL', 60),
 
     // Token cache timeout
     'cachebase' => env('FREEBOXPHP_CACHE_BASE', 'madpilot78:FreeBoxPHP:'),
