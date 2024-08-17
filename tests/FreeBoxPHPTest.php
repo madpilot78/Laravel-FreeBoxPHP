@@ -20,7 +20,7 @@ class FreeBoxPHPTest extends TestCase
         $this->assertTrue(File::exists(config_path('freebox.php')));
     }
 
-    public function testINstanceWIthWrongMethod(): void
+    public function testInstanceWithWrongMethod(): void
     {
         $box = $this->app->make(Box::class);
 
