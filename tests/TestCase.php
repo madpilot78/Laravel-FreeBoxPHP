@@ -13,7 +13,6 @@ class TestCase extends OrchestraTestCase
     {
         return [
             FreeBoxPHPServiceProvider::class,
-            /* TermwindServiceProvider::class, */
         ];
     }
 }
