@@ -20,7 +20,7 @@
     "require": {
         "php": "^8.3",
         "illuminate/support": "^11.0",
-        "madpilot78/freebox-php": "^1.0.2",
+        "madpilot78/freebox-php": "^1.0.3",
         "psr/log": "^3.0",
         "symfony/cache": "^7.1"
     },
