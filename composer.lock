@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "35e2283b5e5d1ce041100e80e7b9acbd",
+    "content-hash": "f803f7897f5a8213e6846429e9997d77",
     "packages": [
         {
             "name": "brick/math",
@@ -1974,16 +1974,16 @@
         },
         {
             "name": "madpilot78/freebox-php",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/madpilot78/FreeBoxPHP.git",
-                "reference": "64d2c886243954049ce5837b9c3c3420deead4d7"
+                "reference": "f8a3f7af808b22b1eb463341469d86669d75750b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/madpilot78/FreeBoxPHP/zipball/64d2c886243954049ce5837b9c3c3420deead4d7",
-                "reference": "64d2c886243954049ce5837b9c3c3420deead4d7",
+                "url": "https://api.github.com/repos/madpilot78/FreeBoxPHP/zipball/f8a3f7af808b22b1eb463341469d86669d75750b",
+                "reference": "f8a3f7af808b22b1eb463341469d86669d75750b",
                 "shasum": ""
             },
             "require": {
@@ -2028,9 +2028,9 @@
             ],
             "support": {
                 "issues": "https://github.com/madpilot78/FreeBoxPHP/issues",
-                "source": "https://github.com/madpilot78/FreeBoxPHP/tree/v1.0.1"
+                "source": "https://github.com/madpilot78/FreeBoxPHP/tree/v1.0.2"
             },
-            "time": "2024-08-17T23:05:27+00:00"
+            "time": "2024-08-18T20:17:28+00:00"
         },
         {
             "name": "monolog/monolog",
