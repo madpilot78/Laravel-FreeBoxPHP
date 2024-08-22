@@ -3,7 +3,7 @@
     "description": "Laravel FreeBoxPHP package",
     "license": "BSD-3-Clause",
     "type": "library",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "keywords": [
         "api",
         "freebox",
