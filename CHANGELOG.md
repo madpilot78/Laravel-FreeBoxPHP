@@ -2,7 +2,7 @@
 
 ## [1.0.5] - 2024-08-22
 
-- Updated readme
+- Updated README
 - Bump FreeBoxPHP version requirement
 
 ## [1.0.4] - 2024-08-19
