@@ -30,7 +30,7 @@
         "illuminate/testing": "^11.0",
         "madpilot78/php-cs-fixer-config": "^1.0",
         "orchestra/testbench": "^9.2",
-        "phpunit/phpunit": "^11"
+        "phpunit/phpunit": "^11 | ^12"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
