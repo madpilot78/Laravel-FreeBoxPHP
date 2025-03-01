@@ -39,7 +39,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Run composer
-        run: composer update --with="illuminate/support:${{ matrix.laravel }}" --with="orchestra/testbench:${{ matrix.testbench }}" --prefer-dist --no-interaction --no-progress
+        uses: ramsey/composer-install@v3
+        with:
+          composer-options: --with="illuminate/support:${{ matrix.laravel }}" --with="orchestra/testbench:${{ matrix.testbench }}"
       - name: Run phpunit
         run: vendor/bin/phpunit --coverage-clover ./coverage.xml
       - name: Upload to Codecov
