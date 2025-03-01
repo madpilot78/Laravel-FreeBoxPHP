@@ -3,7 +3,7 @@
     "description": "Laravel FreeBoxPHP package",
     "license": "BSD-3-Clause",
     "type": "library",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "keywords": [
         "api",
         "freebox",
@@ -20,16 +20,16 @@
     "require": {
         "php": "^8.3",
         "illuminate/support": "^11.0",
-        "madpilot78/freebox-php": "^1.0.4",
+        "madpilot78/freebox-php": "^1.0.5",
         "psr/log": "^3.0",
         "symfony/cache": "^7.1"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.42",
         "friendsofphp/php-cs-fixer": "^3.54",
-        "illuminate/testing": "^11.0",
+        "illuminate/testing": "^11.0 | ^12.0",
         "madpilot78/php-cs-fixer-config": "^1.0",
-        "orchestra/testbench": "^9.2",
+        "orchestra/testbench": "^9.2 | ^10.0",
         "phpunit/phpunit": "^11 | ^12"
     },
     "minimum-stability": "stable",
