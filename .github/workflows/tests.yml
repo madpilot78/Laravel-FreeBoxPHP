@@ -41,6 +41,7 @@ jobs:
       - name: Run composer
         uses: ramsey/composer-install@v3
         with:
+          dependency-versions: highest
           composer-options: --with="illuminate/support:${{ matrix.laravel }}" --with="orchestra/testbench:${{ matrix.testbench }}"
       - name: Run phpunit
         run: vendor/bin/phpunit --coverage-clover ./coverage.xml
