@@ -19,4 +19,14 @@ class FreeBoxPHPTest extends TestCase
 
         $this->assertTrue(File::exists(config_path('freebox.php')));
     }
+
+    public function testInstanceWithWrongMethod(): void
+    {
+        $box = $this->app->make(Box::class);
+
+        $this->expectException(BadMethodCallException::class);
+        $this->expectExceptionMessage('Method foobar not found');
+
+        $box->foobar();
+    }
 }
