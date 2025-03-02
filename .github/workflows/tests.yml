@@ -47,6 +47,11 @@ jobs:
         with:
           dependency-versions: highest
           composer-options: --with="illuminate/support:${{ matrix.laravel }}" --with="orchestra/testbench:${{ matrix.testbench }}"
+      - name: Run phpstan
+        uses: php-actions/phpstan@v3
+        with:
+          php_version: ${{ matrix.php }}
+          memory_limit: 256M
       - name: Run phpunit
         run: vendor/bin/phpunit --coverage-clover ./coverage.xml
       - name: Upload to Codecov
