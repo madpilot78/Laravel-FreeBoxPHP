@@ -30,7 +30,9 @@
         "illuminate/testing": "^11.0 | ^12.0",
         "madpilot78/php-cs-fixer-config": "^1.0",
         "orchestra/testbench": "^9.2 | ^10.0",
-        "phpunit/phpunit": "^11 | ^12"
+        "phpunit/phpunit": "^11 | ^12",
+        "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-phpunit": "^2.0"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
