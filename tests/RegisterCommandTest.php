@@ -15,9 +15,13 @@ class RegisterCommandTest extends TestCase
         $mockFreeBox = $this->createMock(Box::class);
 
         $mockFreeBox
-            ->expects($this->exactly(2))
-            ->method('__call')
-            ->willReturn($mockFreeBox, self::TESTKEY);
+            ->expects($this->once())
+            ->method('discover')
+            ->willReturn($mockFreeBox);
+        $mockFreeBox
+            ->expects($this->once())
+            ->method('register')
+            ->willReturn(self::TESTKEY);
 
         $this->app->instance(Box::class, $mockFreeBox);
 
