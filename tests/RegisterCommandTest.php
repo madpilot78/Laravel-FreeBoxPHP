@@ -23,7 +23,7 @@ class RegisterCommandTest extends TestCase
             ->method('register')
             ->willReturn(self::TESTKEY);
 
-        $this->app->instance(Box::class, $mockFreeBox);
+        $this->app?->instance(Box::class, $mockFreeBox);
 
         // @phpstan-ignore method.nonObject
         $this->artisan('freeboxphp:register')

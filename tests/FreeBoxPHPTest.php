@@ -21,7 +21,9 @@ class FreeBoxPHPTest extends TestCase
 
     public function testInstanceWithWrongMethod(): void
     {
-        $box = $this->app->make(Box::class);
+        $box = $this->app?->make(Box::class);
+
+        $this->assertNotNull($box);
 
         $this->expectException(\Error::class);
         $this->expectExceptionMessage('Call to undefined method madpilot78\FreeBoxPHP\Box::foobar()');
