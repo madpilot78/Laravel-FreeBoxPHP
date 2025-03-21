@@ -25,6 +25,7 @@ class RegisterCommandTest extends TestCase
 
         $this->app->instance(Box::class, $mockFreeBox);
 
+        // @phpstan-ignore method.nonObject
         $this->artisan('freeboxphp:register')
             ->expectsOutput(self::TESTKEY)
             ->assertSuccessful();
