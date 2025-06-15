@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.3.0] - 2023-04-10
+
+- Bump FreeBoxPHP version requirement
+
+## [1.2.0] - 2023-03-21
+
+- Raised PHPStan level
+- Bump FreeBoxPHP version requirement
+
+## [1.1.0] - 2023-03-03
+
+- Bump FreeBoxPHP version requirement
+
+## [1.0.6] - 2023-03-01
+
+- Allow using with Laravel 12
+- Bump FreeBoxPHP version requirement
+
 ## [1.0.5] - 2024-08-22
 
 - Updated README
