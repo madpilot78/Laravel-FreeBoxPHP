@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.3.1] - 2025-06-15
+
+- Bump FreeBoxPHP version requirement
+- Minor code improvement
+
 ## [1.3.0] - 2025-04-10
 
 - Bump FreeBoxPHP version requirement
