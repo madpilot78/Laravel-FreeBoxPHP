@@ -41,10 +41,8 @@ class FreeBoxPHPServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton(Box::class, function (Application $app) {
-            $token = config('freebox.token');
-
             return new Box(
-                $token,
+                config('freebox.token'),
                 new Configuration(
                     appId: config('freebox.appid'),
                     appName: config('freebox.appname'),
