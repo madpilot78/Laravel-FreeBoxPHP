@@ -30,11 +30,15 @@ jobs:
             testbench: 9.*
           - laravel: 12.*
             testbench: 10.*
+          - php: '8.5'
+            experimental: true
     name: PHP ${{ matrix.php }} - L ${{ matrix.laravel }}
     steps:
       - name: Checkout Code
+        id: checkout
         uses: actions/checkout@v5
       - name: setup PHP
+        id: setup
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
@@ -43,18 +47,28 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Run composer
+        id: composer
         uses: ramsey/composer-install@v3
+        continue-on-error: ${{ matrix.experimental }}
         with:
           dependency-versions: highest
           composer-options: --with="illuminate/support:${{ matrix.laravel }}" --with="orchestra/testbench:${{ matrix.testbench }}"
       - name: Run phpstan
+        id: phpstan
+        if: ${{ ! matrix.experimental || steps.composer.outcome == 'success' }}
         uses: php-actions/phpstan@v3
+        continue-on-error: ${{ matrix.experimental }}
         with:
           php_version: ${{ matrix.php }}
           memory_limit: 256M
       - name: Run phpunit
+        id: phpunit
+        if: ${{ ! matrix.experimental || steps.composer.outcome == 'success' }}
         run: vendor/bin/phpunit --cache-directory "$RUNNER_TEMP" --coverage-clover ./coverage.xml
+        continue-on-error: ${{ matrix.experimental }}
       - name: Upload to Codecov
+        id: codecov
+        if: ${{ ! matrix.experimental || steps.phpunit.outcome == 'success' }}
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
