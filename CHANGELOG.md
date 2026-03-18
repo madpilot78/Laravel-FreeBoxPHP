@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.3.2] - 2026-03-18
+
+- Bump FreeBoxPHP version requirement
+- Mark compatible with Laravel 13
+
 ## [1.3.1] - 2025-06-15
 
 - Bump FreeBoxPHP version requirement
