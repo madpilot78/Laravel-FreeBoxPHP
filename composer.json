@@ -19,8 +19,8 @@
     ],
     "require": {
         "php": "^8.3",
-        "illuminate/support": "^11.0 | ^12.0",
-        "madpilot78/freebox-php": "^1.3.1",
+        "illuminate/support": "^11.0 | ^12.0 | ^13.0",
+        "madpilot78/freebox-php": "^1.3.2",
         "psr/log": "^3.0",
         "symfony/cache": "^7.1 || ^8.0"
     },
@@ -29,8 +29,8 @@
         "friendsofphp/php-cs-fixer": "^3.54",
         "illuminate/testing": "^11.0 | ^12.0",
         "madpilot78/php-cs-fixer-config": "^1.0",
-        "orchestra/testbench": "^9.2 | ^10.0",
-        "phpunit/phpunit": "^11 | ^12",
+        "orchestra/testbench": "^9.2 | ^10.0 | ^11.0",
+        "phpunit/phpunit": "^11 | ^12 | ^13",
         "phpstan/phpstan": "^2.1",
         "phpstan/phpstan-phpunit": "^2.0"
     },
